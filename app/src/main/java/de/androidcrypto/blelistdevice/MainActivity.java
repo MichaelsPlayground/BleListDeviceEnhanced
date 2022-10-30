@@ -77,5 +77,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button scanEnhanced = findViewById(R.id.btnMainScanBleEnhanced);
+        scanEnhanced.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, LeDeviceScanEnhancedActivityOwn.class);
+                startActivity(intent);
+            }
+        });
     }
 }
